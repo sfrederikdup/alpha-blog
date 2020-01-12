@@ -1,0 +1,70 @@
+<div class="app">
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="active sidebar-item">
+        <%= link_to "<i class='fa fa-home'></i> <span>Home</span>".html_safe, root_path, class: "active sidebar-link" %>
+      </li>
+      <li class="sidebar-item">
+        <%= link_to "<i class='fa fa-user'></i> <span>About</span>".html_safe, about_path, class: "sidebar-link" %>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-gamepad"></i>
+          <span>gamepad</span>
+        </a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-calendar"></i>
+          <span>calendar</span>
+        </a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-key"></i>
+          <span>key</span>
+        </a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link" @click="logout()">
+          <i class="fa fa-sign-out"></i>
+          <span>logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="container">
+      <h1 class="jumbotron-heading">Dashboard</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card card-block">
+            <h4 class="card-title">Dashboard block 1</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium adipisci aliquam autem distinctio explicabo facilis illum labore maxime minima, neque optio quo reiciendis sapiente sit soluta temporibus veniam.
+            </p>
+
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-block">
+            <h4 class="card-title">Dashboard block 2</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ducimus impedit ipsam itaque, qui quidem voluptate! Dignissimos et excepturi facilis illum magnam modi nam, nihil numquam sapiente sint. Ea, laudantium.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
